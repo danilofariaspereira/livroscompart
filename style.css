@@ -1,0 +1,177 @@
+
+/* geral*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; /*ficar todos dentro da mesmas caixa*/
+font-family: 'Poppins', sans-serif; /*fonts google*/
+}
+
+body{
+    background-color: rgb(195, 188, 188); /*cor total de fundo*/
+
+}
+
+.interface{
+    max-width: 12800px;
+    margin: 0 auto;  /* afastar da lateral*/
+}
+
+.flex{
+    display: flex; /* chamei a class pra deixar a img ao lado do txt*/
+}
+ h2.titulo{
+    color:rgb(83, 21, 184);
+    font-size: 35px;
+    text-align: center;
+ }
+ 
+/*cabçalho*/
+header{
+    padding: 0px 2%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(217, 213, 222);
+    text-decoration: none;
+    display: inline-block; /* pra poder usar o transform*/
+}
+header a:hover{
+    color:rgb(83, 21, 184);
+    transform: scale(1.10); /* no serviços e suporte aplicar zoom*/
+
+}
+
+header nav ul{
+    list-style-type: none; /*sumir a bolinhas que ficam ao lado do nome*/ 
+}
+header nav ul li{
+   display: inline-block;
+   padding: 0 60px; 
+}
+
+header .btn-sing-in button{
+    color: rgb(237, 232, 238);
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(66, 44, 99);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+header .btn-sing-in button:hover{
+    box-shadow: 0px 0px 8px  rgb(226, 217, 228) ;
+}
+
+/* estilo topo*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.topo-do-site h1{
+    color:rgb(66, 44, 99);
+    font-size: 50px;
+    line-height: 43px; /*espassasamento entre as escrita do h1*/
+}
+
+.topo-do-site .txt-topo p{
+    color:rgb(66, 44, 99);
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.topo-do-site .txt-topo img{
+    position:relative;
+    animation: flutuar 2s ease-in-out infinite alternate; /* parte flutuante*/
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* estilo etapas */
+section.etapas{
+    padding: 40px 4%;
+}
+section.etapas .flex{
+    gap: 40px;
+
+}
+
+.etapas .etapas-box{
+    color:rgb(66, 44, 99);
+    padding: 70px;
+    border-radius: 20px;
+    margin-top: 75px;
+    transition: .2s;
+}
+
+.etapas .etapas-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 80px  rgb(66, 44, 99);
+}
+
+.etapas .etapas-box h3{
+    font-size: 28px;
+}
+
+/* stilo compras */
+
+section.compra{
+    padding: 40px 4%;
+}
+section.compra .flex{
+    gap: 60px;
+
+}
+
+.compra .compra-box{
+    color:rgb(66, 44, 99);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 55px;
+    transition: .2s;
+}
+
+.compra .compra-box{
+    transform: scale(1.05);
+    box-shadow: 0 0 80px  rgb(66, 44, 99);
+}
+
+.compra .compra-box h4{
+    font-size: 28px;
+}
+
+.btn-assine button {
+    color: rgb(237, 232, 238);
+    padding: 10px 180px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(66, 44, 99);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    box-shadow: 0px 0px 50px  rgb(175, 39, 205) ;
+    transform: scale(1.10);  
+}
